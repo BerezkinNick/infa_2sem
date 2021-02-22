@@ -1,9 +1,9 @@
 #include <iostream>
 
-typedef struct Node {
-    int value;
-    struct Node *next;
-} Node;
+struct Node {
+int value;
+struct Node *next;
+};
 
 void push_left(Node ** head, int value) {
     if (*head == NULL) {
