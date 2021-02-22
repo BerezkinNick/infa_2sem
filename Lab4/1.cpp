@@ -5,7 +5,7 @@ typedef struct Node {
     struct Node *next;
 } Node;
 
-void push_head(Node ** head, int value) {
+void push_left(Node ** head, int value) {
     if (*head == NULL) {
         *head = new Node;
         (*head)->value = value;
@@ -32,7 +32,7 @@ void print_list(Node * head)
 int main(int argc, char const *argv[])
 {
     Node * list = NULL;
-    for (int i = 1; i <= 10; ++i) push_head(&list, i);
+    for (int i = 1; i <= 10; ++i) push_left(&list, i);
     print_list(list);
     return 0;
 }
