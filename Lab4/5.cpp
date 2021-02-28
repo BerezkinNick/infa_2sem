@@ -17,11 +17,11 @@ void remove_all(Node** head, int value)
             Node* p = *head;
             *head = (**head).next;
             delete p;
-            k ++;
+            k++;
         }
         else{
             delete *head;
-            k ++;
+            k++;
             *head = NULL;
             return;
         }
@@ -67,7 +67,8 @@ void print_list(Node * head)
 int main(int argc, char const *argv[]) {
     Node *list = NULL;
     for (int i = 1; i <= 10; ++i) {push_left(&list, i);
-    push_left(&list, i);}
+    push_left(&list, i);
+    }
     print_list(list);
     int x;
     cin >> x;
