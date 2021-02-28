@@ -25,9 +25,9 @@ int pop(Node** head, int index)
                 return INT_MIN;
             }
         }
-        Node* memory = (*pop_node).next;
-        (*pop_node).next = (*memory).next;
-        delete memory;
+        Node* p = (*pop_node).next;
+        (*pop_node).next = (*p).next;
+        delete p;
     }
     return (*pop_node).value;
 }
