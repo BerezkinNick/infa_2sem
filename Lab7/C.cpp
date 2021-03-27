@@ -6,6 +6,7 @@ int main(){
     float s =0;
     float c=0;
     int k = -1;
+    x = 1;
     while (x != 0){
         k += 1;
         cin>>x;
